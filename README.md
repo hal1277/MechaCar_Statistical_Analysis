@@ -8,7 +8,7 @@ AutosRU is having some manufacturing problems with their newest prototype MechaC
 
 ## Linear Regression to Predict MPG
 
-![Customers vs Subscribers](https://public.tableau.com/views/Module14ChallengeAssignment_16436792672500/NYCCitibikes?:language=en-US&:display_count=n&:origin=viz_share_link)
+![Linear Regression Results](https://github.com/hal1277/MechaCar_Statistical_Analysis/blob/d34ce6ebd6e0cefdc3b4ff18efd2d36df0a22ccb/Linear_Analysis.png)
 
 The linear regression tested the variables of vehicle length, vehicle weight, spoiler angle, ground clearance, and AWD to see their affect on efficiency (MPG).  The slope of the linear model is not exactly zero but is very close to 0.  The slope has a slight inverse relationship with ground clearance and vehicle lenth meaning that as the clearance and length increase the MPG decreases slightly.  For both of these variables the P value is below 0.05 meaning a high degree of confidence that these variables are having a non-random effect on the MPG.
 
@@ -18,19 +18,19 @@ This linear model does predict the MPG of MechaCar prototypes effectively.  This
 
 It's important that the variance of suspendsion coils not exceed 100 PSI.  When looking at the total summary statistics the samples are within the tolerance specified with a variance of 62.2.
 
-![Number of Rides per Bike](https://public.tableau.com/shared/NZ4PTGNWQ?:display_count=n&:origin=viz_share_link)
+![Summary Statistics - All Samples](https://github.com/hal1277/MechaCar_Statistical_Analysis/blob/d34ce6ebd6e0cefdc3b4ff18efd2d36df0a22ccb/Total_Summary.png)
 
 However, when looking at the individual lots it can be seen that the variance in Lot 1 and Lot 2 is actually much lower than 62.2 but the variance in Lot 3 is out of tolerance at 170.2.  
 
-![Duration of Rides](https://public.tableau.com/shared/724S699YJ?:display_count=n&:origin=viz_share_link)
+![Summary Statistics - By Lot](https://github.com/hal1277/MechaCar_Statistical_Analysis/blob/d34ce6ebd6e0cefdc3b4ff18efd2d36df0a22ccb/Lot_Summary.png)
 
 ## T-tests On Suspension Coils 
 
-![Rentals by Gender](https://public.tableau.com/shared/BNCQDKDR8?:display_count=n&:origin=viz_share_link)
+![T-Test: Random - All Lots](https://github.com/hal1277/MechaCar_Statistical_Analysis/blob/d34ce6ebd6e0cefdc3b4ff18efd2d36df0a22ccb/t_test_sample_all_lots.png)
 
 Performing a t-test on a sample of 50 data points across all lots the p-value is higher than 0.05 so it is appropriate to reject the null hypothesis that true mean is equal to 1498.78.    
 
-![Rentals by Time of Day](https://public.tableau.com/shared/P7Y6SWRQT?:display_count=n&:origin=viz_share_link)
+![T-Tests: By Lot](https://github.com/hal1277/MechaCar_Statistical_Analysis/blob/d34ce6ebd6e0cefdc3b4ff18efd2d36df0a22ccb/t-tests_by_lot.png)
 
 Performing the t-test on each individual lot shows for Lot 1 and Lot 2 the null hypotheses cannot be rejected since the p-values are much lower than 0.05 but on Lot 3 the null hypothesis can be rejected becuase the p-value is much higher than 0.05.  This is an expected result since we say from the summary statistics that Lot 3 has some values that are too low relative to the tolerance level.  
 
